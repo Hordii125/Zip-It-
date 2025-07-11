@@ -13,5 +13,13 @@ public class App {
         List<Integer> zippedList = zipper.zip(list1, list2);
 
         System.out.println("Zipped List: " + zippedList);
+
+        // Example usage with strings
+        List<String> stringList1 = List.of("a", "c", "e");
+        List<String> stringList2 = List.of("b", "d");
+        
+        List<String> zippedStringList = zipper.zip(stringList1, stringList2);
+
+        System.out.println("Zipped String List: " + zippedStringList);
     }
 }

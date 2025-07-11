@@ -20,4 +20,13 @@ public class ZipperTest {
         List<Integer> expected = List.of(1, 2, 3, 4, 5, 7);
         assertEquals(expected, zipper.zip(list1, list2));
     }
+
+    @Test 
+    public void testZipperWithStrings() {
+        ListZipper zipper = new ListZipper();
+        List<String> list1 = List.of("a", "c", "e");
+        List<String> list2 = List.of("b", "d");
+        List<String> expected = List.of("a", "b", "c", "d", "e");
+        assertEquals(expected, zipper.zip(list1, list2));
+    }
 }
